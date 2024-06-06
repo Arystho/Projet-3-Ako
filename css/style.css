@@ -1,0 +1,117 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap');
+/* général */
+*{
+    margin: 0;
+}
+:root{
+    --prata:"Prata", serif;
+    --roboto:"Roboto", sans-serif;
+    --open-sans:"Open Sans", sans-serif;
+    --black:#000000;
+    --white:#ffffff;
+    --grey:#7A7A7A;
+    --red: #ff0000;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+h1, h2{
+    font-size: 52px;
+    font-family: var(--prata);
+}
+h3{
+    font-size: 20px;
+    font-family: var(--prata);
+}
+p{
+    font-size: 16px;
+    font-family: var(--open-sans);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* header */
+#header{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+#header a img{
+    width: 188px;
+    height: 99px;
+
+}
+#header #nav ul{
+    display: flex;
+    gap: 30px;
+}
+#header #nav ul li a{
+    color: var(--grey);
+}
+#header #nav-icone{
+    gap: 25px;
+    display: flex;
+}
+#header #nav-icone a{
+    font-size: 20px;
+    color: var(--grey);
+}
+#header #nav ul li a:hover,
+#header #nav-icone a:hover{
+    color: var(--red);
+}
+
+/* main */
+/* section1 */
+#section1 .background-container{
+    background-image: url(/img/image-fond.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 596px;
+}
+#section1 .background-overlay{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#section1 .container{
+    color: var(--white); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    gap: 30px;
+}
+
+/* footer */
+footer {
+background: var(--black);
+}
+footer p{
+    color: var(--white);
+    display: grid;
+    padding: 84px 0 10px;
+    justify-content: center;
+}
